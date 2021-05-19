@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <locale.h>
 class Transport {
 public:
 	virtual std::string Name() = 0;
@@ -14,27 +13,27 @@ private:
 	public:
 		std::string Name() { return "Car"; }
 		int Wheels() { return 4; }
-		int max() { return 100; }
+		int max() { return 150; }
 	};
 	class Bike : public Transport {
 	public:
 		std::string Name() { return "Bike"; }
 		int Wheels() { return 2; }
-		int max() { return 150; }
+		int max() { return 200; }
 	};
 
 	class Scooter : public Transport {
 	public:
 		std::string Name() { return "Scooter"; }
 		int Wheels() { return 2; }
-		int max() { return 80; }
+		int max() { return 30; }
 	};
 
 	class Buss : public Transport {
 	public:
 		std::string Name() { return "BUSS"; }
 		int Wheels() { return 6; }
-		int max() { return 60; }
+		int max() { return 80; }
 	};
 
 public:
