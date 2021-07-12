@@ -1,0 +1,228 @@
+
+body {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.712);
+    background-image: url(about_bg.jpg);
+    background-repeat: no-repeat;
+}
+.header {
+    background: #4b4b4bc0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding-left: 9px;
+    display: flex;
+    z-index: 999;
+  
+}
+.img {
+    width: 100%;
+    padding-top: 10px;
+}
+.butom-style {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 10em calc(.8em + 3px);
+    border-radius: 3px;
+      background: #333;
+    box-shadow: 0 -3px rgba(12, 14, 13, 0.842) inset;
+    transition: 0.2s;
+}
+
+.popup-link{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 11em calc(.8em + 3px);
+    border-radius: 10px;
+    background: rgb(15, 36, 14);
+    box-shadow: 0 -3px rgba(12, 14, 13, 0.842) inset;
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    top: 0;
+    left: 0;
+    opacity: 0 ;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+.popup:target .popup-content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+}
+.popup-area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup-body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    transition: all 0.8s ease 0s;
+
+}
+.popup-content {
+    width: 1040px;
+    height: 480px;
+    background-color: white;
+    color: black;
+    max-width: 800px;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    border: 40px solid #00AAEF;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    border-radius: 10px;
+}
+.popup-close {
+    position: absolute;
+    right: -36px;
+    top: -81px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-style: normal;
+}
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+
+    margin: 30px 30px 30px 30px;
+}
+.popup-title {
+    color:#007FCC;
+    text-align: center;
+}
+.popup-text { 
+    color: #252525;
+    text-align: center;
+    font-size: 18px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+}
+.data {
+    width: 174px;
+    height: 44px;
+    flex-basis: content;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 7px 10px 0px 0px;
+}
+.prodolzh {
+    width: 174px;
+    height: 44px;
+    flex-basis: content;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 7px 30px 0px 0px;
+}
+.vzroslie {
+    width: 174px;
+    height: 44px;
+    flex-basis: content;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 7px 10px 0px 0px;
+    }
+.children {
+    width: 160px;
+    height: 44px;
+    flex-basis: content;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 7px 0px 0px 0px;
+}
+.tel{
+    width: 174px;
+    height: 44px;
+    flex-basis: content;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 30px 20px 0px 0px;
+}
+.FIO {
+    width: 538px;
+    height: 44px;
+    flex-basis: content;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 30px 0px 0px 0px;
+}
+.checkbox {
+    display: block;
+    margin: 28px 0px 0px 0px;
+}
+.search {
+    width: 340px;
+    height: 50px;
+    background: linear-gradient(270deg, #007FCC 0%, #00AAEF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    margin: 28px 0px 0px 136px;
+}
+.info {
+    text-align: right;
+    width: 342px;
+    position: absolute;
+    height: 32px;
+    left: 398px;
+    top: 370px;
+    font-size: 10px;
+    font-family: Segoe UI;
+}
+.text1 {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 140%;
+}
+.text2 {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 140%;
+}
+.form {
+    padding-left: 236px;
+}
